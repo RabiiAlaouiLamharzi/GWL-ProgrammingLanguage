@@ -1,0 +1,36 @@
+program program_2
+
+Typedef struct[
+
+int height
+
+int width
+
+int depth
+
+]Tub
+
+
+
+Typedef struct[
+
+int size
+
+]Plant
+
+Tub : t1
+Plant : p1
+Earth : c1
+Block : v1
+
+ if( p1.size >  t1.height * 3)[
+
+    print Sorry! This action cannot be performed. ]
+
+ if( p1.size <  t1.height * 3)[
+
+    print your plant has been placed. ]
+
+ if( p1.size ==  t1.height * 3)[
+
+    print your plant has been placed. ]

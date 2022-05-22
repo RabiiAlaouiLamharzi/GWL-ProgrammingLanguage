@@ -1,0 +1,13 @@
+program program_3
+
+adding(int x, int y)[
+    
+int sum
+
+sum : x + y
+
+return sum
+
+]
+
+adding(3,2)

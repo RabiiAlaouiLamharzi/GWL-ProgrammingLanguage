@@ -1,0 +1,50 @@
+# Code used to place blocks in the extreme corners of the world
+
+    program simple_program
+    $Define Height 10
+    $Define Width 10
+    $Define Depth 10
+    typedef struct[
+        int height
+        int width
+        int depth
+    ]Block
+
+    typedef struct[
+        int x      # width axis
+        int y      # depth axis
+        int z      # height axis
+    ]position
+
+    int qBlock
+
+    Block makeBlock (int w, int d, int h) [
+        if (qBlock !=! 0) [
+            qBlock : qBlock - 1
+            Block block_one
+            block_one.width : w
+            block_one.depth : d
+            block_one.height : h ]
+
+        else [ print No blocks left! ]
+            return block_one ]
+
+    position placeBlock (int xa, int ya, int za) [
+    if (xa <= Width & ya <= Depth & za <= Height) [
+
+    position position_one
+        position_one.x : xa
+        position_one.y : ya
+        position_one.z : za
+    return position_one
+
+    ] else
+        [ Print Sorry! This action cannot be done because at least one of your given inputs goes beyond the delimitations of the Green World ] ]
+
+    go [
+        qBlock : 20
+        Block block_one
+        position position_one
+        block_one : makeBlock (1, 1, 1)
+        position_one : position (1, 1, 1)
+    ] stop
