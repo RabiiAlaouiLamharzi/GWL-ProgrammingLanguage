@@ -67,9 +67,9 @@ The static semantic has as role to make sure that all parameters used in the fun
 
 The content of the symbol table was initialized to contain all the reserved words. It has information about the scope that an identifier occurs in.
 
-For Code generation, we will generate code using as target language a simple assembly-like language under the name og GWAL
-
 **GAWL generator:**
+
+For Code generation, we will generate code using as target language a simple assembly-like language under the name of GWAL
 
 -	Input File: program1.txt, program2.txt, program3.txt (to be found in File Part 3).
 -	Output Files:
